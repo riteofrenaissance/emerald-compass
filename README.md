@@ -1,4 +1,4 @@
-# 🧭 The Emerald Compass
+# 🧭 THE EMERALD COMPASS 
 
 **A Research-Backed Framework for Reshaping AI Interaction**
 
