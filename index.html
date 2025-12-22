@@ -30,6 +30,22 @@
             color: white;
         }
         
+        .compass-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
         h1 {
             font-size: 3em;
             margin-bottom: 20px;
@@ -70,6 +86,15 @@
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.4);
             background: #f8f9fa;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
         }
         
         .main-content {
@@ -165,13 +190,6 @@
             color: #666;
         }
         
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: white;
-            margin-top: 50px;
-        }
-        
         .download-section {
             background: linear-gradient(135deg, #50C878 0%, #2E8B57 100%);
             color: white;
@@ -192,35 +210,11 @@
             opacity: 0.95;
         }
         
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            margin-top: 50px;
         }
         
         .pagination {
@@ -279,19 +273,26 @@
             display: grid;
         }
         
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
             }
-            50% {
-                transform: translateY(-20px);
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
         
-        .compass-icon {
-            font-size: 5em;
-            margin-bottom: 20px;
-            animation: float 3s ease-in-out infinite;
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -379,7 +380,6 @@
                 
                 <!-- Page 2: Principles 7-12 -->
                 <div class="principles-grid principles-page" id="page-2">
-                
                 <div class="principle-card">
                     <div class="principle-number">07</div>
                     <div class="principle-name">Difficulty</div>
@@ -425,7 +425,6 @@
                 
                 <!-- Page 3: Principles 13-18 -->
                 <div class="principles-grid principles-page" id="page-3">
-                
                 <div class="principle-card">
                     <div class="principle-number">13</div>
                     <div class="principle-name">Repetition</div>
@@ -471,7 +470,6 @@
                 
                 <!-- Page 4: Principles 19-24 -->
                 <div class="principles-grid principles-page" id="page-4">
-                
                 <div class="principle-card">
                     <div class="principle-number">19</div>
                     <div class="principle-name">Rules</div>
@@ -517,7 +515,6 @@
                 
                 <!-- Page 5: Principles 25-27 -->
                 <div class="principles-grid principles-page" id="page-5">
-                
                 <div class="principle-card">
                     <div class="principle-number">25</div>
                     <div class="principle-name">Review</div>
@@ -548,44 +545,11 @@
                 <button class="page-btn" onclick="changePage('next')" id="nextBtn">Next →</button>
             </div>
             
-            <script>
-                let currentPage = 1;
-                const totalPages = 5;
-                
-                function changePage(direction) {
-                    // Hide current page
-                    document.getElementById(`page-${currentPage}`).classList.remove('active');
-                    
-                    // Update page number
-                    if (direction === 'next' && currentPage < totalPages) {
-                        currentPage++;
-                    } else if (direction === 'prev' && currentPage > 1) {
-                        currentPage--;
-                    }
-                    
-                    // Show new page
-                    document.getElementById(`page-${currentPage}`).classList.add('active');
-                    
-                    // Update page info
-                    document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
-                    
-                    // Update button states
-                    document.getElementById('prevBtn').disabled = (currentPage === 1);
-                    document.getElementById('nextBtn').disabled = (currentPage === totalPages);
-                    
-                    // Scroll to principles section
-                    document.querySelector('.section-title').scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-                
-                // Initialize button states
-                document.getElementById('prevBtn').disabled = true;
-            </script>
-            
             <div class="download-section" id="download">
                 <h2>🎁 Get Your Free Guide</h2>
                 <p>Access the complete framework with detailed explanations, practical examples, and implementation strategies.</p>
                 <p style="font-size: 1.1em; margin: 20px 0;"><strong>40 pages | 27 principles | Deep insights</strong></p>
-                <a href="https://emerald-compass.netlify.app" target="_blank" rel="noopener noreferrer" class="cta-button" style="background: white; color: #2E8B57;">Download Full Guide</a>
+                <a href="https://github.com/riteofrenaissance/emerald-compass/raw/main/assets/PRINCIPES.zip" class="cta-button" style="background: white; color: #2E8B57;">📥 Download Guide (ZIP)</a>
                 <p style="margin-top: 25px; font-size: 0.95em; opacity: 0.9;">
                     📚 Part of the Emerald Compass Initiative<br>
                     🔬 Research-backed framework for AI interaction<br>
@@ -606,5 +570,38 @@
             </p>
         </footer>
     </div>
+    
+    <script>
+        let currentPage = 1;
+        const totalPages = 5;
+        
+        function changePage(direction) {
+            // Hide current page
+            document.getElementById(`page-${currentPage}`).classList.remove('active');
+            
+            // Update page number
+            if (direction === 'next' && currentPage < totalPages) {
+                currentPage++;
+            } else if (direction === 'prev' && currentPage > 1) {
+                currentPage--;
+            }
+            
+            // Show new page
+            document.getElementById(`page-${currentPage}`).classList.add('active');
+            
+            // Update page info
+            document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
+            
+            // Update button states
+            document.getElementById('prevBtn').disabled = (currentPage === 1);
+            document.getElementById('nextBtn').disabled = (currentPage === totalPages);
+            
+            // Scroll to principles section
+            document.querySelector('.section-title').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+        // Initialize button states
+        document.getElementById('prevBtn').disabled = true;
+    </script>
 </body>
 </html>
