@@ -1,0 +1,23 @@
+{
+  "title": "The 27 Principles: Emerald Compass Framework for AI Interaction",
+  "upload_type": "publication",
+  "publication_type": "other",
+  "description": "A comprehensive framework of 27 foundational principles...",
+  "creators": [
+    {
+      "name": "Baladi, Samir",
+      "affiliation": "Rite of Renaissance Research Foundation",
+      "orcid": "0009-0003-9825-3770"
+    }
+  ],
+  "keywords": [
+    "artificial intelligence",
+    "human-AI interaction",
+    "cognitive sovereignty",
+    "prompt engineering"
+  ],
+  "license": "cc-by-4.0",
+  "communities": [
+    {"identifier": "rite-of-renaissance"}
+  ]
+}
