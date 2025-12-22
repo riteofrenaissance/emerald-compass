@@ -1,4 +1,4 @@
-# 🧭 The 27 Principles: Emerald Compass
+# 🧭 The Emerald Compass
 
 **A Research-Backed Framework for Reshaping AI Interaction**
 
