@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this framework in your research, please cite it as below."
+type: software
+title: "The 27 Principles: Emerald Compass Framework for AI Interaction"
+version: 1.0.0
+date-released: 2025-12-20
+abstract: "A comprehensive framework of 27 foundational principles for reshaping human-AI interaction, designed to enhance interaction quality, promote cognitive sovereignty, and support progressive skill development in AI engagement."
+authors:
+  - family-names: Baladi
+    given-names: Samir
+    orcid: https://orcid.org/0009-0003-9825-3770
+    email: riteofrenaissance@proton.me
+    affiliation: "Rite of Renaissance Research Foundation"
+repository-code: "https://github.com/riteofrenaissance/emerald-compass"
+url: "https://emerald-compass.netlify.app"
+keywords:
+  - artificial intelligence
+  - human-AI interaction
+  - cognitive sovereignty
+  - prompt engineering
+  - AI interaction framework
+  - conversational AI
+  - AI literacy
+  - interaction principles
+  - educational framework
+license: CC-BY-4.0
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.PENDING"
+    description: "Zenodo DOI"
+preferred-citation:
+  type: software
+  authors:
+    - family-names: Baladi
+      given-names: Samir
+      orcid: https://orcid.org/0009-0003-9825-3770
+  title: "The 27 Principles: Emerald Compass Framework for AI Interaction"
+  year: 2025
+  publisher:
+    name: "Rite of Renaissance Research Foundation"
+  url: "https://github.com/riteofrenaissance/emerald-compass"
+  doi: "10.5281/zenodo.PENDING"
