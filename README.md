@@ -2,7 +2,7 @@
 
 **A Research-Backed Framework for Reshaping AI Interaction**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.svg)](https://doi.org/10.5281/ZENODO.17480100)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17480100.svg)](https://doi.org/10.5281/ZENODO.17480100)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0003--9825--3770-green.svg)](https://orcid.org/0009-0003-9825-3770)
 
