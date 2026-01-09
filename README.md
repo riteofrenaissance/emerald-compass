@@ -139,7 +139,7 @@ If you use this framework in your work, please cite:
   year = {2025},
   publisher = {Rite of Renaissance Research Foundation},
   url = {https://github.com/riteofrenaissance/emerald-compass},
-  doi = {10.5281/zenodo.PENDING}
+  doi = {10.5281/zenodo.18041583}
 }
 ```
 
